@@ -1,0 +1,36 @@
+﻿body {
+   width: 100%;
+   height: 100%;
+   background-color: #c7b39b;
+   background-size: contain;
+}
+
+html, body {
+   overflow-x: hidden;
+   max-width: 100%;
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+
+   /* Сбрасываем все отступы у элементов(жестко, но на первых порах ок) */
+   margin: 0;
+   padding: 0;
+}
+
+.logo {
+   margin-top: 20px;
+   margin-bottom: 40px;
+
+   /* ставим размеры для логотипа */
+   width: 180px;
+   height: 180px;
+  
+
+   /* вписываем png картинку в размеры, если получится поставить svg формат можно и убрать :) */
+   object-fit: cover; /* Будёт плохо смотреться поставить contain */
+}
+.header {
+   text-decoration-color: beige;
+
+}
